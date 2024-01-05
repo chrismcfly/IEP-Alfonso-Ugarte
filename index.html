@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I.E.P Alfonso Ugarte</title>
+    <link rel="shortcut icon" href="./img/icono.png" type="image/x-icon">
+    <title>C.E.P Alfonso Ugarte</title>
     <!-- Fonts-JosefinSans -->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Lightbox -->
     <link rel="stylesheet" href="./css/lightbox.min.css">
     <!-- Box-Icons -->
@@ -19,10 +21,10 @@
     <div class="menu-btn">
         <i class='bx bx-menu'></i>
     </div>
-    <div class="container">
+    <div class="wrapper">
         <!-- Navigation-Top -->
-        <nav class="nav-main-top">
-            <div class="nav-container">
+        <header class="nav-main-top">
+            <div class="container">
                 <a href="#"><img src="./img/brand-au.png" alt="Logo" class="nav-brand"></a>
                 <div class="nav-info">
                     <i class='bx bx-phone'></i>
@@ -47,48 +49,54 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </header>
 
         <!-- Navigation-Main -->
         <nav class="nav-main ">
-            <ul class="nav-menu ">
-                <li>
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./nuestro-colegio.html">Nuestro colegio</a>
-                </li>
-                <li>
-                    <a href="./propuesta-educativa.html">Propuesta educativa</a>
-                </li>
-                <li>
-                    <a href="./ultimas-noticias.html">Últimas noticias</a>
-                </li>
-                <li>
-                    <a href="./galeria-fotos.html">Galeria de fotos</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contáctanos</a>
-                </li>
-            </ul>
-
+            <div class="container">
+                <ul class="nav-menu ">
+                    <li>
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./nuestro-colegio.html">Nuestro colegio</a>
+                    </li>
+                    <li>
+                        <a href="./propuesta-educativa.html">Propuesta educativa</a>
+                    </li>
+                    <li>
+                        <a href="./ultimas-noticias.html">Últimas noticias</a>
+                    </li>
+                    <li>
+                        <a href="./galeria-fotos.html">Galeria de fotos</a>
+                    </li>
+                    <li>
+                        <a href="./contacto.html">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <!-- Showcase -->
-        <header class="showcase">
-            <h2>Dedicados a la Excelencia</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio officia totam dolorem corporis inventore voluptates.</p>
-        </header>
+        <main class="showcase">
+            <div class="container">
+                <h2>Dedicados a la Excelencia</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio officia totam dolorem corporis
+                    inventore voluptates.</p>
+            </div>
+        </main>
 
         <!-- Banner -->
         <section class="banner-one ">
-            <img src="./img/gorro-graduacion.png" alt="logo" class="banner-one-brand">
-            <div class="banner-one-text">
-                <h4>MATRICULA a tu hijo.</h4>
-                <p>Inicia la matrícula, nosotros te ayudarémos en el proceso</p>
-            </div>
-            <div class="boton">
-                <a href="#">AQUÍ</a>
+            <div class="container">
+                <img src="./img/gorro-graduacion.png" alt="logo" class="banner-one-brand">
+                <div class="banner-one-text">
+                    <h4>MATRICULA a tu hijo.</h4>
+                    <p>Inicia la matrícula, nosotros te ayudarémos en el proceso</p>
+                </div>
+                <div class="boton">
+                    <a href="#">AQUÍ</a>
+                </div>
             </div>
         </section>
 
@@ -132,68 +140,84 @@
         <!-- Galeria -->
         <div class="gallery-container">
             <div class="gallery-card">
-                <a href="./assets/images/fondo1.jpg" data-lightbox="roadtrip"><img src="./assets/images/fondo1.jpg" alt=""></a>
+                <a href="./assets/images/fondo1.jpg" data-lightbox="roadtrip"><img src="./assets/images/fondo1.jpg"
+                        alt=""></a>
             </div>
             <div class="gallery-card">
-                <a href="./assets/images/fondo2.jpg" data-lightbox="roadtrip"><img src="./assets/images/fondo2.jpg" alt=""></a>
+                <a href="./assets/images/fondo2.jpg" data-lightbox="roadtrip"><img src="./assets/images/fondo2.jpg"
+                        alt=""></a>
             </div>
             <div class="gallery-card">
-                <a href="./assets/images/fondo3.jpg" data-lightbox="roadtrip"><img src="./assets/images/fondo3.jpg" alt=""></a>
+                <a href="./assets/images/fondo3.jpg" data-lightbox="roadtrip"><img src="./assets/images/fondo3.jpg"
+                        alt=""></a>
             </div>
             <div class="gallery-card">
-                <a href="./assets/images/fondo2.jpg" data-lightbox="roadtrip"><img src="./assets/images/fondo2.jpg" alt=""></a>
+                <a href="./assets/images/fondo2.jpg" data-lightbox="roadtrip"><img src="./assets/images/fondo2.jpg"
+                        alt=""></a>
             </div>
         </div>
 
         <!-- Banner -->
         <section class="banner-one ">
-            <img src="./img/alumnos.svg" alt="logo" class="banner-one-brand">
-            <div class="banner-one-text">
-                <h4>Experimenta y aprende.</h4>
-                <p>Hemos elaborado una propuesta educativa completa, que ayudará a tus hijos en su desarrollo.</p>
-            </div>
-            <div class="boton">
-                <a href="#">Ver más</a>
+            <div class="container">
+                <img src="./img/alumnos.svg" alt="logo" class="banner-one-brand">
+                <div class="banner-one-text">
+                    <h4>Experimenta y aprende.</h4>
+                    <p>Hemos elaborado una propuesta educativa completa, que ayudará a tus hijos en su desarrollo.</p>
+                </div>
+                <div class="boton">
+                    <a href="#">Ver más</a>
+                </div>
             </div>
         </section>
 
         <!-- Logros -->
         <section class="logros-main">
-            <h2>Logros de nuestros Alumnos</h2>
-            <div class="logros-container-info">
-                <div>
-                    <img src="./img/mujer.jpg" alt="">
-                    <h3>Christian Ramos Bárcena</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti asperiores quam quas rerum nesciunt doloremque excepturi alias, recusandae, quisquam perferendis possimus animi ipsa quae facilis.</p>
-                </div>
-                <div>
-                    <img src="./img/mujer.jpg" alt="">
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti asperiores quam quas rerum nesciunt doloremque excepturi alias, recusandae, quisquam perferendis possimus animi ipsa quae facilis.</p>
-                </div>
-                <div>
-                    <img src="./img/mujer.jpg" alt="">
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti asperiores quam quas rerum nesciunt doloremque excepturi alias, recusandae, quisquam perferendis possimus animi ipsa quae facilis.</p>
+            <div class="container">
+                <h2>Logros de nuestros Alumnos</h2>
+                <div class="logros-container-info">
+                    <div>
+                        <img src="./img/mujer.jpg" alt="">
+                        <h3>Christian Ramos Bárcena</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti asperiores quam quas rerum
+                            nesciunt doloremque excepturi alias, recusandae, quisquam perferendis possimus animi ipsa
+                            quae facilis.</p>
+                    </div>
+                    <div>
+                        <img src="./img/mujer.jpg" alt="">
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti asperiores quam quas rerum
+                            nesciunt doloremque excepturi alias, recusandae, quisquam perferendis possimus animi ipsa
+                            quae facilis.</p>
+                    </div>
+                    <div>
+                        <img src="./img/mujer.jpg" alt="">
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti asperiores quam quas rerum
+                            nesciunt doloremque excepturi alias, recusandae, quisquam perferendis possimus animi ipsa
+                            quae facilis.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Banner -->
         <section class="banner-one ">
-            <img src="./img/computer.svg" alt="logo" class="banner-one-brand">
-            <div class="banner-one-text">
-                <h4>¿Alumno o Docente?.</h4>
-                <p>Dirigete e inicia sesión en nuestro potente sistema intranet</p>
-            </div>
-            <div class="boton">
-                <a href="#">AQUÍ</a>
+            <div class="container">
+                <img src="./img/computer.svg" alt="logo" class="banner-one-brand">
+                <div class="banner-one-text">
+                    <h4>¿Alumno o Docente?.</h4>
+                    <p>Dirigete e inicia sesión en nuestro potente sistema intranet</p>
+                </div>
+                <div class="boton">
+                    <a href="#">AQUÍ</a>
+                </div>
             </div>
         </section>
 
         <!-- Footer-Links -->
         <footer class="footer-links">
-            <div class="footer-links-container">
+            <div class="container">
                 <div>
                     <h4>Páginas</h4>
                     <ul>
@@ -243,7 +267,8 @@
                 <div>
                     <h4>Nuestro colegio</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias repudiandae eos aperiam recusandae quos natus voluptatum, fugit repellat saepe!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias repudiandae eos
+                        aperiam recusandae quos natus voluptatum, fugit repellat saepe!
                     </p>
                 </div>
             </div>

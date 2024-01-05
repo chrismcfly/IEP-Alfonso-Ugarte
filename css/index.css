@@ -2,52 +2,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
+  text-decoration: none;
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+html{
+  scroll-behavior: smooth;
 }
 
 body {
@@ -72,32 +32,36 @@ body {
   display: none;
 }
 
+.container {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+}
+
 .nav-main-top {
-  height: 100px;
+  height: auto;
+  padding: 10px 0px;
   background: #db3938;
   color: white;
   display: flex;
-  box-shadow: 0px 0px 10px black;
 }
 
-.nav-container {
-  display: flex;
-  width: 90%;
-  margin: auto;
-  align-items: center;
-  justify-content: space-around;
+.nav-main-top .container {
+  justify-content: space-between;
 }
 
-.nav-brand {
+.nav-main-top .container img{
   height: 80px;
 }
 
-.nav-main-top i {
-  font-size: 35px;
+.nav-main-top .container i {
+  font-size: 40px;
 }
 
 .nav-info {
   display: flex;
+  align-items: center;
 }
 
 .nav-main-top i,
@@ -107,10 +71,7 @@ body {
 
 .info-text {
   border-left: 2px groove rgba(231, 221, 221, 0.3);
-}
-
-.info-text {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .nav-main {
@@ -123,7 +84,6 @@ body {
 .nav-main ul {
   display: flex;
   align-items: center;
-  margin-left: 90px;
 }
 
 .nav-main ul li a {
@@ -139,62 +99,56 @@ body {
   transition: 0.6s;
 }
 
-
 .showcase {
   height: 650px;
-  background: #e53935;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #e35d5b65, #e538355d), url("../img/fondo3.jpg") no-repeat center/cover fixed;
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
+  background: #e53935;
+  background: linear-gradient(to right, #e35d5b65, #e538355d), url("../img/fondo3.jpg") no-repeat center/cover fixed;
+}
+
+.showcase .container {
   flex-direction: column;
+  align-items: start;
+  color: white;
 }
 
 .showcase h2 {
   font-size: 42px;
-  margin-top: 150px;
-  margin-bottom: 20px;
-  margin-left: 50px;
-  color: white;
-  font-weight: 700;
-  text-shadow: 0px 0px 2px black;
+  padding: 15px 0px;
 }
 
 .showcase p {
   font-size: 24px;
   width: 35%;
-  color: white;
-  margin-left: 50px;
+  margin-bottom: 80px;
 }
 
 .banner-one {
-  height: 120px;
+  height: auto;
   background: #db3938;
   box-shadow: 0px 0px 10px black;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+}
+
+.banner-one .container{
+  padding: 20px 0px;
 }
 
 .banner-one-brand {
-  height: 100px;
-  width: 105px;
-  margin-left: 150px;
-  margin-right: 40px;
+  width: 100px;
   padding: 10px;
-  border: 1px solid white;
   border-radius: 100px;
   background: white;
 }
 
 .banner-one-text {
   flex: 1;
+  margin-left: 30px;
   color: white;
 }
 
 .banner-one-text h4 {
-  margin-bottom: 10px;
   font-size: 28px;
 }
 
@@ -203,12 +157,9 @@ body {
   width: 70%;
 }
 
-.banner-one .boton {
-  margin-right: 200px;
-}
-
 .present-main {
-  height: 800px;
+  height: auto;
+  padding: 40px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,7 +167,6 @@ body {
 
 .present-text {
   text-align: center;
-  margin-top: 40px;
   margin-bottom: 60px;
 }
 
@@ -309,15 +259,16 @@ body {
 }
 
 .logros-main {
-  height: 620px;
-  display: flex;
+  height: auto;
+  padding: 40px 0px;
+}
+
+.logros-main .container{
   flex-direction: column;
-  align-items: center;
 }
 
 .logros-main h2 {
   font-size: 40px;
-  margin-top: 40px;
   margin-bottom: 40px;
 }
 
@@ -357,7 +308,8 @@ body {
 }
 
 .footer-links {
-  height: 340px;
+  height: auto;
+  padding: 30px 0px;
   background: #555454;
   display: flex;
   align-items: center;
@@ -365,11 +317,11 @@ body {
   border-top: 1px solid white;
 }
 
-.footer-links-container {
+.footer-links .container {
   display: grid;
   grid-template-columns: repeat(3, 250px);
-  gap: 160px;
-  margin-top: 30px;
+  justify-content: center;
+  gap: 210px;
 }
 
 .footer-links h4,
@@ -378,34 +330,34 @@ body {
   color: white;
 }
 
-.footer-links-container div > h4 {
+.footer-links .container div > h4 {
   padding: 15px 0px;
   font-size: 26px;
   border-bottom: 2px solid #f7e152;
 }
 
-.footer-links-container ul {
+.footer-links .container ul {
   margin-top: 40px;
 }
 
-.footer-links-container div ul li {
+.footer-links .container div ul li {
   margin: 10px 0px;
 }
 
-.footer-links-container div ul li i {
+.footer-links .container div ul li i {
   color: white;
   margin-right: 15px;
 }
 
-.footer-links-container div ul li > a {
+.footer-links .container div ul li > a {
   font-size: 16px;
 }
 
-.footer-links-container div ul li > a:hover {
+.footer-links .container div ul li > a:hover {
   border-bottom: 1px solid white;
 }
 
-.footer-links-container div p {
+.footer-links .container div p {
   font-size: 16px;
   margin-top: 40px;
   text-align: justify;
@@ -413,66 +365,29 @@ body {
 }
 
 .footer {
-  height: 50px;
+  height: auto;
+  padding: 20px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #353535;
   color: white;
-  font-size: 14px;
+  font-size: 20px;
   box-shadow: 0px 0px 10px #3b3b3b;
+  text-align: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .nav-main ul li a {
+    padding: 22px 12px;
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 1129px) {
-  .nav-main-top {
-    height: 100px;
+  .container{
+    width: 80%;
   }
-
-  .nav-brand {
-    height: 55px;
-  }
-
-  .nav-container {
-    width: 99%;
-  }
-
-  .info-text {
-    font-size: 13x;
-  }
-
-  .nav-main {
-    height: 60px;
-  }
-
-  .nav-main ul li {
-    padding: 20 0px;
-  }
-
-  .nav-main ul {
-    margin-left: 0px;
-  }
-
-  .nav-main ul li a {
-    padding: 0px 17px;
-    font-size: 14px;
-  }
-
-  .showcase h2 {
-    margin-top: 100px;
-  }
-
-  .banner-one {
-    height: 180px;
-  }
-
-  .banner-one-brand {
-    margin-left: 100px;
-  }
-
-  .banner-one .boton {
-    margin-right: 100px;
-  }
-
   .present-first-file {
     gap: 80px;
   }
@@ -486,25 +401,17 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .logros-main {
-    height: 1100px;
-  }
-
   .logros-container-info {
     grid-template-columns: repeat(2, 300px);
     gap: 50px;
   }
 
-  .logros-container-info div {
-    padding: 20px;
-  }
-
-  .footer-links-container {
+  .footer-links .container {
     grid-template-columns: repeat(3, 200px);
-    gap: 60px;
+    gap: 100px;
   }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 890px) {
   .menu-btn {
     height: 0px;
     display: flex;
@@ -516,14 +423,10 @@ body {
     padding: 5px;
     position: fixed;
   }
-
-  .showcase {
-    height: 550px;
-  }
-
+  
   .showcase h2 {
     font-size: 38px;
-    margin-top: 150px;
+    margin-top: 10px;
   }
 
   .showcase p {
@@ -568,44 +471,27 @@ body {
     font-size: 18px;
   }
 
-  .banner-one {
-    height: 180px;
+  .banner-one-text h4 {
+    font-size: 22px;
   }
-
-  .banner-one-brand {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
+  
   .banner-one-text p {
-    width: 80%;
-  }
-
-  .banner-one .boton {
-    margin-right: 20px;
-  }
-
-  .present-main {
-    height: 1200px;
+    width: 90%;
   }
 
   .present-first-file {
     grid-template-columns: repeat(1, 200px);
     gap: 20px;
-    margin-bottom: 50px;
   }
 
-  .gallery-container {
-    height: 400px;
-  }
-
-  .logros-main {
-    height: 1370px;
+  .present-second-file {
+    grid-template-columns: repeat(1, 200px);
+    gap: 40px;
   }
 
   .logros-container-info {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(1, 400px);
+    gap: 60px;
   }
 
   .logros-container-info div {
@@ -613,93 +499,28 @@ body {
     margin: auto;
   }
 
-  .footer-links {
-    height: 940px;
-  }
-
-  .footer-links-container {
-    grid-template-columns: repeat(1, 300px);
+  .footer-links .container {
+    grid-template-columns: repeat(1, 250px);
+    gap: 20px;
   }
 }
-@media screen and (max-width: 500px) {
-  .showcase {
-    height: 600px;
-  }
-
-  .showcase h2 {
-    margin-top: 100px;
-    text-align: center;
-    margin-left: 0px;
-  }
-
+@media screen and (max-width: 589px) {
   .showcase p {
-    transform: translateX(-250px);
+    width: 90%;
   }
-
-  .present-main {
-    height: 1550px;
-  }
-
-  .present-second-file {
-    grid-template-columns: repeat(1, 200px);
-  }
-
-  .banner-one {
-    height: 350px;
+  .banner-one .container{
     flex-direction: column;
-  }
-
-  .banner-one-brand {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .banner-one-text {
     text-align: center;
   }
-
-  .banner-one-text p {
-    margin-top: 15px;
-    width: 100%;
-    margin-bottom: 25px;
+  .boton {
+    padding-top: 20px;
   }
-
-  .banner-one .boton {
-    margin-bottom: 50px;
-    margin-right: 0px;
-  }
-
   .gallery-container {
-    border: 1px solid white;
-    height: 750px;
+    height: 1000px;
     grid-template-columns: repeat(1, 1fr);
   }
-
-  .logros-main {
-    height: 1350px;
-  }
-
-  .logros-main h2 {
-    text-align: center;
-  }
-
-  .logros-main p {
-    text-align: start;
-  }
-
-  .footer-links {
-    height: 950px;
-  }
-
-  .footer-links-container {
-    grid-template-columns: repeat(1, 250px);
-  }
-
-  .footer-links-container div p {
-    text-align: start;
-  }
-
-  .footer {
-    text-align: center;
+  .logros-container-info {
+    grid-template-columns: repeat(1, 270px);
+    gap: 60px;
   }
 }
