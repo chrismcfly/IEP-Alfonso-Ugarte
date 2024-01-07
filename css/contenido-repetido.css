@@ -6,6 +6,16 @@
     list-style: none;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #fff;
+    }
+}
+
+body {
+    -webkit-prefers-color-scheme: light;
+}
+
 html {
     scroll-behavior: smooth;
 }
