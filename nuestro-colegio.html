@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I.E.P Alfonso Ugarte</title>
     <!-- Fonts-JosefinSans -->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Box-Icons -->
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/contenido-repetido.css">
     <link rel="stylesheet" href="./css/nuestro-colegio.css">
 </head>
 
@@ -17,10 +19,10 @@
     <div class="menu-btn">
         <i class='bx bx-menu'></i>
     </div>
-    <div class="container">
+    <div class="wrapper">
         <!-- Navigation-Top -->
-        <nav class="nav-main-top">
-            <div class="nav-container">
+        <header class="nav-main-top">
+            <div class="container">
                 <a href="#"><img src="./img/brand-au.png" alt="Logo" class="nav-brand"></a>
                 <div class="nav-info">
                     <i class='bx bx-phone'></i>
@@ -45,60 +47,68 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </header>
 
         <!-- Navigation-Main -->
-        <nav class="nav-main">
-            <ul class="nav-menu ">
-                <li>
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./nuestro-colegio.html">Nuestro colegio</a>
-                </li>
-                <li>
-                    <a href="./propuesta-educativa.html">Propuesta educativa</a>
-                </li>
-                <li>
-                    <a href="./ultimas-noticias.html">Últimas noticias</a>
-                </li>
-                <li>
-                    <a href="./galeria-fotos.html">Galeria de fotos</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contáctanos</a>
-                </li>
-            </ul>
+        <nav class="nav-main ">
+            <div class="container">
+                <ul class="nav-menu ">
+                    <li>
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./nuestro-colegio.html">Nuestro colegio</a>
+                    </li>
+                    <li>
+                        <a href="./propuesta-educativa.html">Propuesta educativa</a>
+                    </li>
+                    <li>
+                        <a href="./ultimas-noticias.html">Últimas noticias</a>
+                    </li>
+                    <li>
+                        <a href="./galeria-fotos.html">Galeria de fotos</a>
+                    </li>
+                    <li>
+                        <a href="./contacto.html">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <!-- Separation -->
         <div class="separation-banner">
-            <h2>Nuestro colegio</h2>
+            <div class="container">
+                <h2>Nuestro colegio</h2>
+            </div>
         </div>
 
         <div class="separation-bar">
-            <a href="./index.html">Home</a><span>&nbsp;> Nuestro colegio</span>
+            <div class="container">
+                <a href="./index.html">Home</a><span>&nbsp;> Nuestro colegio</span>
+            </div>
         </div>
 
         <!-- Nuestro colegio -->
-        <section class="ourcollege-main">
-
-            <div class="ourcollege-info">
-                <div class="ourcollege-info-1">
+        <main class="ourcollege">
+            <div class="container">
+                <div class="ourcollege-info">
                     <div class="ourcollege-text">
                         <h3>Visión</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus exercitationem eum quod nemo dolorum aut expedita voluptatum debitis eveniet minima.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus exercitationem eum quod
+                            nemo dolorum aut expedita voluptatum debitis eveniet minima.</p>
                     </div>
                     <img src="./img/fondo1.jpg" alt="">
                 </div>
-                <div class="ourcollege-info-1">
+                <div class="ourcollege-info">
                     <div class="ourcollege-text">
                         <h3>Misión</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, unde. Recusandae praesentium reiciendis vitae eveniet consequuntur error beatae dolorum quas voluptas sit. Unde, odio optio!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, unde. Recusandae praesentium
+                            reiciendis vitae eveniet consequuntur error beatae dolorum quas voluptas sit. Unde, odio
+                            optio!</p>
                     </div>
                     <img src="./img/fondo1.jpg" alt="">
                 </div>
-                <div class="ourcollege-info-1">
+                <div class="ourcollege-info">
                     <div class="ourcollege-text">
                         <h3>Nuestros valores</h3>
                         <ul>
@@ -112,25 +122,35 @@
                     <img src="./img/fondo1.jpg" alt="">
                 </div>
             </div>
-        </section>
+        </main>
 
         <!-- Videos Institucionales -->
         <section class="video-main">
-            <h2>Videos Institucionales</h2>
-            <div class="video-content">
-                <iframe width="510" height="287" src="https://www.youtube.com/embed/aNde6S2kXOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="container">
+                <h2>Videos Institucionales</h2>
+                <div class="video-content">
+                    <iframe width="510" height="287" src="https://www.youtube.com/embed/aNde6S2kXOw" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
-                <iframe width="510" height="287" src="https://www.youtube.com/embed/dPD_0FVl1zc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="510" height="287" src="https://www.youtube.com/embed/dPD_0FVl1zc" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
-                <iframe width="510" height="287" src="https://www.youtube.com/embed/r75AD4Atpm4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="510" height="287" src="https://www.youtube.com/embed/r75AD4Atpm4" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
-                <iframe width="510" height="287" src="https://www.youtube.com/embed/ya4yIUgaUbY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="510" height="287" src="https://www.youtube.com/embed/ya4yIUgaUbY" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             </div>
         </section>
 
         <!-- Footer-Links -->
         <footer class="footer-links">
-            <div class="footer-links-container">
+            <div class="container">
                 <div>
                     <h4>Páginas</h4>
                     <ul>
@@ -158,29 +178,30 @@
                     <h4>Enlaces</h4>
                     <ul>
                         <li>
-                            <a href="">Lorem ipsum dolor sit.</a>
+                            <i class='bx bx-check-circle'></i><a href="">Lorem ipsum dolor sit.</a>
                         </li>
                         <li>
-                            <a href="">Lorem ipsum dolor sit.</a>
+                            <i class='bx bx-check-circle'></i><a href="">Lorem ipsum dolor sit.</a>
                         </li>
                         <li>
-                            <a href="">Lorem ipsum dolor sit.</a>
+                            <i class='bx bx-check-circle'></i><a href="">Lorem ipsum dolor sit.</a>
                         </li>
                         <li>
-                            <a href="">Lorem ipsum dolor sit.</a>
+                            <i class='bx bx-check-circle'></i><a href="">Lorem ipsum dolor sit.</a>
                         </li>
                         <li>
-                            <a href="">Lorem ipsum dolor sit.</a>
+                            <i class='bx bx-check-circle'></i><a href="">Lorem ipsum dolor sit.</a>
                         </li>
                         <li>
-                            <a href="">Lorem ipsum dolor sit.</a>
+                            <i class='bx bx-check-circle'></i><a href="">Lorem ipsum dolor sit.</a>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <h4>Nuestro colegio</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias repudiandae eos aperiam recusandae quos natus voluptatum, fugit repellat saepe!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias repudiandae eos
+                        aperiam recusandae quos natus voluptatum, fugit repellat saepe!
                     </p>
                 </div>
             </div>
@@ -191,6 +212,7 @@
             <h6>© Copyright 2020 - Colegio Alfonso Ugarte - Lima, Santa Anita</h6>
         </footer>
     </div>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

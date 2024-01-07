@@ -1,104 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-}
-
-html{
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Josefin Sans", sans-serif;
-}
-
-.boton a {
-  color: white;
-  padding: 10px 20px;
-  border: 2px solid white;
-  border-radius: 100px;
-}
-
-.boton a:hover {
-  background: #dfba16;
-  border: 2px solid #dfba16;
-  transition: 0.6s;
-  box-shadow: 0px 0px 10px black;
-}
-
-.menu-btn {
-  display: none;
-}
-
-.container {
-  display: flex;
-  width: 70%;
-  margin: auto;
-  align-items: center;
-}
-
-.nav-main-top {
-  height: auto;
-  padding: 10px 0px;
-  background: #db3938;
-  color: white;
-  display: flex;
-}
-
-.nav-main-top .container {
-  justify-content: space-between;
-}
-
-.nav-main-top .container img{
-  height: 80px;
-}
-
-.nav-main-top .container i {
-  font-size: 40px;
-}
-
-.nav-info {
-  display: flex;
-  align-items: center;
-}
-
-.nav-main-top i,
-.info-text {
-  padding: 0px 10px;
-}
-
-.info-text {
-  border-left: 2px groove rgba(231, 221, 221, 0.3);
-  font-size: 16px;
-}
-
-.nav-main {
-  height: 60px;
-  background: #f7e152;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-  display: flex;
-}
-
-.nav-main ul {
-  display: flex;
-  align-items: center;
-}
-
-.nav-main ul li a {
-  padding: 22px 30px;
-  font-size: 16px;
-  color: #db3938;
-}
-
-.nav-main ul li a:hover {
-  background: #db3938;
-  color: white;
-  box-shadow: 0px 0px 10px black;
-  transition: 0.6s;
-}
-
 .showcase {
   height: 650px;
   display: flex;
@@ -307,87 +206,7 @@ body {
   text-align: justify;
 }
 
-.footer-links {
-  height: auto;
-  padding: 30px 0px;
-  background: #555454;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-top: 1px solid white;
-}
-
-.footer-links .container {
-  display: grid;
-  grid-template-columns: repeat(3, 250px);
-  justify-content: center;
-  gap: 210px;
-}
-
-.footer-links h4,
-.footer-links a,
-.footer-links p {
-  color: white;
-}
-
-.footer-links .container div > h4 {
-  padding: 15px 0px;
-  font-size: 26px;
-  border-bottom: 2px solid #f7e152;
-}
-
-.footer-links .container ul {
-  margin-top: 40px;
-}
-
-.footer-links .container div ul li {
-  margin: 10px 0px;
-}
-
-.footer-links .container div ul li i {
-  color: white;
-  margin-right: 15px;
-}
-
-.footer-links .container div ul li > a {
-  font-size: 16px;
-}
-
-.footer-links .container div ul li > a:hover {
-  border-bottom: 1px solid white;
-}
-
-.footer-links .container div p {
-  font-size: 16px;
-  margin-top: 40px;
-  text-align: justify;
-  line-height: 1.5rem;
-}
-
-.footer {
-  height: auto;
-  padding: 20px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #353535;
-  color: white;
-  font-size: 20px;
-  box-shadow: 0px 0px 10px #3b3b3b;
-  text-align: center;
-}
-
-@media screen and (max-width: 1400px) {
-  .nav-main ul li a {
-    padding: 22px 12px;
-    font-size: 14px;
-  }
-}
-
 @media screen and (max-width: 1129px) {
-  .container{
-    width: 80%;
-  }
   .present-first-file {
     gap: 80px;
   }
@@ -405,11 +224,6 @@ body {
     grid-template-columns: repeat(2, 300px);
     gap: 50px;
   }
-
-  .footer-links .container {
-    grid-template-columns: repeat(3, 200px);
-    gap: 100px;
-  }
 }
 @media screen and (max-width: 890px) {
   .menu-btn {
@@ -423,19 +237,6 @@ body {
     padding: 5px;
     position: fixed;
   }
-  
-  .showcase h2 {
-    font-size: 38px;
-    margin-top: 10px;
-  }
-
-  .showcase p {
-    width: 50%;
-    color: #fff7f7;
-    text-shadow: 0px 0px 5px black;
-    font-size: 20px;
-  }
-
   .nav-main-top {
     display: none;
   }
@@ -471,6 +272,18 @@ body {
     font-size: 18px;
   }
 
+  .showcase h2 {
+    font-size: 38px;
+    margin-top: 10px;
+  }
+
+  .showcase p {
+    width: 50%;
+    color: #fff7f7;
+    text-shadow: 0px 0px 5px black;
+    font-size: 20px;
+  }
+
   .banner-one-text h4 {
     font-size: 22px;
   }
@@ -497,11 +310,6 @@ body {
   .logros-container-info div {
     width: 90%;
     margin: auto;
-  }
-
-  .footer-links .container {
-    grid-template-columns: repeat(1, 250px);
-    gap: 20px;
   }
 }
 @media screen and (max-width: 589px) {
