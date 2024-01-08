@@ -190,41 +190,6 @@
   }
 }
 @media screen and (max-width: 890px) {
-  .nav-main-top {
-    display: none;
-  }
-
-  .nav-main {
-    height: 0px;
-  }
-
-  .nav-main ul.nav-menu {
-    display: block;
-    top: 0;
-    left: 0;
-    background: #2f3640d8;
-    position: fixed;
-    height: 100%;
-    width: 240px;
-    transform: translateX(-250px);
-    transition: 0.6s;
-    cursor: pointer;
-  }
-
-  .nav-main ul.nav-menu.show {
-    transition: 0.6s;
-    transform: translateX(0px);
-  }
-
-  .nav-main ul li {
-    margin: 30px 0px;
-  }
-
-  .nav-main ul li a {
-    color: white;
-    font-size: 18px;
-  }
-
   .showcase h2 {
     font-size: 38px;
     margin-top: 10px;

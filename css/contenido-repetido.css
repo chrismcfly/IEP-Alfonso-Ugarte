@@ -283,7 +283,25 @@ body {
         position: fixed;
     }
 
-    .nav-main-top {
+    /*.nav-main-top .container{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .nav-main-top .nav-info:nth-child(1){
+    
+    }
+
+    .nav-main-top .nav-info:nth-child(2){
+        display: none;
+    }
+
+    .nav-main-top .nav-info:nth-child(4){
+        display: none;
+    }
+    */
+
+    .nav-main-top .nav-info{
         display: none;
     }
 
@@ -337,4 +355,11 @@ body {
         flex-direction: column;
         text-align: center;
       }
+}
+
+@media screen and (max-width: 380px){
+    .nav-main-top .container img {
+        width: 90%;
+        height: auto;
+    }
 }
