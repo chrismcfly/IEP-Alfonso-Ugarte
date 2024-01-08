@@ -1,189 +1,10 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block
-}
-
-body {
-    line-height: 1
-}
-
-ol,
-ul {
-    list-style: none
-}
-
-a {
-    text-decoration: none
-}
-
-blockquote,
-q {
-    quotes: none
-}
-
-blockquote:after,
-blockquote:before,
-q:after,
-q:before {
-    content: "";
-    content: none
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0
-}
-
-body {
-    font-family: "Josefin Sans", sans-serif
-}
-
-.boton a {
-    color: white;
-    padding: 10px 20px;
-    border: 2px solid white;
-    border-radius: 100px
-}
-
-.boton a:hover {
-    background: #dfba16;
-    border: 2px solid #dfba16;
-    transition: 0.6s;
-    box-shadow: 0px 0px 10px black
-}
-
-.menu-btn {
-    display: none
-}
-
-.nav-main-top {
-    height: 100px;
-    background: #db3938;
-    color: white;
-    display: flex;
-    box-shadow: 0px 0px 10px black
-}
-
-.nav-container {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    align-items: center;
-    justify-content: space-around
-}
-
-.nav-brand {
-    height: 80px
-}
-
-.nav-main-top i {
-    font-size: 35px
-}
-
-.nav-info {
-    display: flex
-}
-
-.info-text,
-.nav-main-top i {
-    padding: 0px 10px
-}
-
-.info-text {
-    border-left: 2px groove rgba(231, 221, 221, 0.3)
-}
-
-.info-text {
-    font-size: 14px
-}
-
-.nav-main {
-    height: 60px;
-    background: #f7e152;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-    display: flex
-}
-
-.nav-main ul {
-    display: flex;
-    align-items: center;
-    margin-left: 90px
-}
-
-.nav-main ul li a {
-    padding: 22px 30px;
-    font-size: 16px;
-    color: #db3938
-}
-
-.nav-main ul li a:hover {
-    background: #db3938;
-    color: white;
-    box-shadow: 0px 0px 10px black;
-    transition: 0.6s
-}
-
-.separation-banner {
-    height: 160px;
-    background: rgba(177, 177, 177, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-.separation-banner h2 {
-    color: #ff3535;
-    font-size: 45px;
-    font-weight: 400
-}
-
-.separation-bar {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 2px solid rgba(177, 177, 177, 0.7)
-}
-
-.separation-bar a {
-    color: black;
-    font-size: 15px;
-    padding: 5px;
-    cursor: pointer
-}
-
-.separation-bar a:hover {
-    color: red
-}
-
-.separation-bar span {
-    color: gray
-}
-
 .news-main {
-    height: 1200px;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    align-items: center
+    height: auto;
+    padding: 60px 0px;
 }
 
-.news-container {
+.news-main .container {
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 60px
@@ -191,27 +12,25 @@ body {
 
 .news-card-1 {
     box-shadow: 0px 0px 20px gray;
-    border-radius: 50px;
+    border-radius: 30px;
     padding: 40px 20px
 }
 
 .news-main div img {
     width: 100%;
     box-shadow: 0px 0px 10px black;
-    border-radius: 50px
+    border-radius: 30px
 }
 
 .news-main div h4 {
     text-align: center;
     font-size: 26px;
-    padding: 10px
+    padding: 15px 0px;
 }
 
 .news-main div p {
-    text-align: justify;
+    text-align: center;
     line-height: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px
 }
 
 .news-main div.boton {
@@ -233,12 +52,11 @@ body {
 .num-main {
     height: 50px;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .num-main div {
-    margin-left: 10px;
-    margin-bottom: 30px
+    padding: 0px 10px;
 }
 
 .num-main div a {
@@ -249,108 +67,32 @@ body {
     background: gray
 }
 
-.banner-one {
-    height: 120px;
-    background: #db3938;
-    box-shadow: 0px 0px 10px black;
-    display: flex;
-    align-items: center;
-    justify-content: space-around
+@media screen and (max-width: 1129px) {
+    .news-main .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
 }
 
-.banner-one-brand {
-    height: 100px;
-    width: 105px;
-    margin-left: 150px;
-    margin-right: 40px;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 100px;
-    background: white
+@media screen and (max-width: 890px) {
+    .news-main .container {
+        width: 50%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
 }
 
-.banner-one-text {
-    flex: 1;
-    color: white
-}
-
-.banner-one-text h4 {
-    margin-bottom: 10px;
-    font-size: 28px
-}
-
-.banner-one-text p {
-    font-size: 18px;
-    width: 70%
-}
-
-.banner-one .boton {
-    margin-right: 200px
-}
-
-.footer-links {
-    height: 340px;
-    background: #555454;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-top: 1px solid white
-}
-
-.footer-links-container {
-    display: grid;
-    grid-template-columns: repeat(3, 250px);
-    gap: 160px;
-    margin-top: 30px
-}
-
-.footer-links a,
-.footer-links h4,
-.footer-links p {
-    color: white
-}
-
-.footer-links-container div>h4 {
-    padding: 15px 0px;
-    font-size: 26px;
-    border-bottom: 2px solid #f7e152
-}
-
-.footer-links-container ul {
-    margin-top: 40px
-}
-
-.footer-links-container div ul li {
-    margin: 10px 0px
-}
-
-.footer-links-container div ul li i {
-    color: white;
-    margin-right: 15px
-}
-
-.footer-links-container div ul li>a {
-    font-size: 16px
-}
-
-.footer-links-container div ul li>a:hover {
-    border-bottom: 1px solid white
-}
-
-.footer-links-container div p {
-    font-size: 16px;
-    margin-top: 40px;
-    text-align: justify;
-    line-height: 1.5rem
-}
-
-.footer {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #353535;
-    color: white;
-    font-size: 14px;
-    box-shadow: 0px 0px 10px #3b3b3b
+@media screen and (max-width: 589px) {
+    .banner-one-text {
+        margin-left: 0px;
+        padding: 20px 0px;
+    }
+    .banner-one-text p {
+        width: 100%;
+    }
+    .news-main .container {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
 }

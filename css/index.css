@@ -22,40 +22,6 @@
   margin-bottom: 80px;
 }
 
-.banner-one {
-  height: auto;
-  background: #db3938;
-  box-shadow: 0px 0px 10px black;
-  display: flex;
-  align-items: center;
-}
-
-.banner-one .container{
-  padding: 20px 0px;
-}
-
-.banner-one-brand {
-  width: 100px;
-  padding: 10px;
-  border-radius: 100px;
-  background: white;
-}
-
-.banner-one-text {
-  flex: 1;
-  margin-left: 30px;
-  color: white;
-}
-
-.banner-one-text h4 {
-  font-size: 28px;
-}
-
-.banner-one-text p {
-  font-size: 18px;
-  width: 70%;
-}
-
 .present-main {
   height: auto;
   padding: 40px 0px;
@@ -169,41 +135,39 @@
 .logros-main h2 {
   font-size: 40px;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .logros-container-info {
   display: grid;
-  grid-template-columns: repeat(3, 330px);
-  gap: 70px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
   text-align: center;
 }
 
 .logros-container-info div {
   padding: 40px 15px;
-  border-radius: 50px;
+  border-radius: 30px;
   color: black;
   background: white;
   box-shadow: 0px 0px 15px gray;
 }
 
 .logros-container-info img {
-  height: 200px;
-  width: 85%;
+  width: 90%;
   border-radius: 20px;
 }
 
 .logros-container-info h3 {
   font-size: 22px;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  padding: 20px 0px;
   border-bottom: 1px solid #db3939;
 }
 
 .logros-container-info p {
   font-size: 16px;
-  text-align: justify;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1129px) {
@@ -216,27 +180,16 @@
   }
 
   .gallery-container {
-    height: 500px;
+    height: 550px;
     grid-template-columns: repeat(2, 1fr);
   }
 
   .logros-container-info {
-    grid-template-columns: repeat(2, 300px);
-    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
   }
 }
 @media screen and (max-width: 890px) {
-  .menu-btn {
-    height: 0px;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .menu-btn i {
-    font-size: 2.5rem;
-    padding: 5px;
-    position: fixed;
-  }
   .nav-main-top {
     display: none;
   }
@@ -284,14 +237,6 @@
     font-size: 20px;
   }
 
-  .banner-one-text h4 {
-    font-size: 22px;
-  }
-  
-  .banner-one-text p {
-    width: 90%;
-  }
-
   .present-first-file {
     grid-template-columns: repeat(1, 200px);
     gap: 20px;
@@ -303,7 +248,7 @@
   }
 
   .logros-container-info {
-    grid-template-columns: repeat(1, 400px);
+    grid-template-columns: repeat(1, 1fr);
     gap: 60px;
   }
 
@@ -316,10 +261,7 @@
   .showcase p {
     width: 90%;
   }
-  .banner-one .container{
-    flex-direction: column;
-    text-align: center;
-  }
+  
   .boton {
     padding-top: 20px;
   }
@@ -327,8 +269,14 @@
     height: 1000px;
     grid-template-columns: repeat(1, 1fr);
   }
+  .logros-main .container{
+    width: 95%;
+  }
+  .logros-container-info div {
+    padding: 20px 10px;
+  }  
   .logros-container-info {
-    grid-template-columns: repeat(1, 270px);
+    grid-template-columns: repeat(1, 1fr);
     gap: 60px;
   }
 }

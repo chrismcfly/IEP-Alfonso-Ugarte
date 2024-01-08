@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I.E.P Alfonso Ugarte</title>
+    <link rel="shortcut icon" href="./img/icono.png" type="image/x-icon">
+    <title>C.E.P Alfonso Ugarte</title>
     <!-- Fonts-JosefinSans -->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Box-Icons -->
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/contenido-repetido.css">
     <link rel="stylesheet" href="./css/propuesta-educativa.css">
 </head>
 
@@ -17,10 +20,10 @@
     <div class="menu-btn">
         <i class='bx bx-menu'></i>
     </div>
-    <div class="container">
+    <div class="wrapper">
         <!-- Navigation-Top -->
-        <nav class="nav-main-top">
-            <div class="nav-container">
+        <header class="nav-main-top">
+            <div class="container">
                 <a href="#"><img src="./img/brand-au.png" alt="Logo" class="nav-brand"></a>
                 <div class="nav-info">
                     <i class='bx bx-phone'></i>
@@ -45,73 +48,167 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </header>
 
         <!-- Navigation-Main -->
         <nav class="nav-main ">
-            <ul class="nav-menu ">
-                <li>
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./nuestro-colegio.html">Nuestro colegio</a>
-                </li>
-                <li>
-                    <a href="./propuesta-educativa.html">Propuesta educativa</a>
-                </li>
-                <li>
-                    <a href="./ultimas-noticias.html">Últimas noticias</a>
-                </li>
-                <li>
-                    <a href="./galeria-fotos.html">Galeria de fotos</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contáctanos</a>
-                </li>
-            </ul>
+            <div class="container">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./nuestro-colegio.html">Nuestro colegio</a>
+                    </li>
+                    <li>
+                        <a href="./propuesta-educativa.html">Propuesta educativa</a>
+                    </li>
+                    <li>
+                        <a href="./ultimas-noticias.html">Últimas noticias</a>
+                    </li>
+                    <li>
+                        <a href="./galeria-fotos.html">Galeria de fotos</a>
+                    </li>
+                    <li>
+                        <a href="./contacto.html">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <!-- separation-banner -->
-        <div>
-            <div class="separation-banner">
-                <h2>Propuesta educativa</h2>
-            </div>
-            <div class="separation-bar">
-                <a href="./index.html">Home</a><span>&nbsp;> Propuesta educativa</span>
+        <div class="separation-banner">
+            <div class="container">
+                <h2>Propuesta Educativa</h2>
             </div>
         </div>
 
-        <section class="education-main">
-            <div class="education-present">
-                <h2>Lorem ipsum dolor sit.</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quod dolore maxime itaque laboriosam culpa, quaerat voluptas dolores assumenda eveniet obcaecati ratione quidem at deleniti porro quos voluptates numquam nesciunt quo repellendus.
-                    Eius omnis quisquam quasi. Impedit aliquam eaque amet?</p>
+        <div class="separation-bar">
+            <div class="container">
+                <a href="./index.html">Home</a><span>&nbsp;> Propuesta Educativa</span>
             </div>
-            <div class="education-grid">
-                <div class="education-info">
-                    <h2>Lorem, ipsum dolor.</h2>
-                    <img src="./img/fondo1.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt tenetur doloremque unde alias a aliquid facere perferendis ipsum ipsa cupiditate recusandae numquam, cum ipsam natus est fugit culpa in facilis optio! Numquam deleniti
-                        dolorem atque, aut sint delectus eaque reprehenderit.</p>
+        </div>
+
+        <section class="education">
+            <div class="container">
+                <div class="education-text">
+                    <h2>Nuestra propuesta educativa</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, perferendis quia. Quibusdam
+                        ipsum labore doloremque dolorem rerum, architecto quidem dolorum et? Molestiae quas unde
+                        necessitatibus, itaque ratione magni libero sunt quod incidunt voluptatum commodi sequi
+                        provident quisquam corporis soluta nostrum est aliquid consectetur quidem inventore aspernatur
+                        ab doloremque. Ipsum ea, omnis soluta voluptates consequuntur officiis provident ipsam magnam
+                        cum voluptatibus.
+                    </p>
                 </div>
-                <div class="education-info">
-                    <h2>Lorem, ipsum dolor.</h2>
-                    <img src="./img/fondo1.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt tenetur doloremque unde alias a aliquid facere perferendis ipsum ipsa cupiditate recusandae numquam, cum ipsam natus est fugit culpa in facilis optio! Numquam deleniti
-                        dolorem atque, aut sint delectus eaque reprehenderit.</p>
+                <div class="education-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dPD_0FVl1zc?si=HzLOOYZTTdT0xD_1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
-                <div class="education-info">
-                    <h2>Lorem, ipsum dolor.</h2>
-                    <img src="./img/fondo1.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt tenetur doloremque unde alias a aliquid facere perferendis ipsum ipsa cupiditate recusandae numquam, cum ipsam natus est fugit culpa in facilis optio! Numquam deleniti
-                        dolorem atque, aut sint delectus eaque reprehenderit.</p>
+            </div>
+        </section>
+
+        <section class="initial">
+            <div class="container">
+                <div class="initial-content">
+                    <div class="initial-header">
+                        <h2>Nivel Inicial</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit itaque debitis ipsum
+                            earum dicta quaerat illo minima, error facere sint.</p>
+                    </div>
+                    <div class="initial-blocks">
+                        <div class="initial-block-content">
+                            <h3>Habilidad investigativa</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum asperiores tempora hic
+                                tenetur quo quod minima vel deleniti, debitis, autem nihil natus doloremque omnis.
+                                Provident!</p>
+                        </div>
+                        <div class="initial-block-content">
+                            <h3>Habilidad investigativa</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum asperiores tempora hic
+                                tenetur quo quod minima vel deleniti, debitis, autem nihil natus doloremque omnis.
+                                Provident!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="initial-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dPD_0FVl1zc?si=HzLOOYZTTdT0xD_1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="initial">
+            <div class="container">
+                <div class="initial-content">
+                    <div class="initial-header">
+                        <h2>Nivel Primaria</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit itaque debitis ipsum
+                            earum dicta quaerat illo minima, error facere sint.</p>
+                    </div>
+                    <div class="initial-blocks">
+                        <div class="initial-block-content green">
+                            <h3>Habilidad investigativa</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum asperiores tempora hic
+                                tenetur quo quod minima vel deleniti, debitis, autem nihil natus doloremque omnis.
+                                Provident!</p>
+                        </div>
+                        <div class="initial-block-content green">
+                            <h3>Habilidad investigativa</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum asperiores tempora hic
+                                tenetur quo quod minima vel deleniti, debitis, autem nihil natus doloremque omnis.
+                                Provident!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="initial-video">
+                    <iframe width="560" height="315" class="video" src="https://www.youtube.com/embed/dPD_0FVl1zc?si=HzLOOYZTTdT0xD_1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="initial">
+            <div class="container">
+                <div class="initial-content">
+                    <div class="initial-header">
+                        <h2>Nivel Secundaria</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit itaque debitis ipsum
+                            earum dicta quaerat illo minima, error facere sint.</p>
+                    </div>
+                    <div class="initial-blocks">
+                        <div class="initial-block-content blue">
+                            <h3>Habilidad investigativa</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum asperiores tempora hic
+                                tenetur quo quod minima vel deleniti, debitis, autem nihil natus doloremque omnis.
+                                Provident!</p>
+                        </div>
+                        <div class="initial-block-content blue">
+                            <h3>Habilidad investigativa</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum asperiores tempora hic
+                                tenetur quo quod minima vel deleniti, debitis, autem nihil natus doloremque omnis.
+                                Provident!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="initial-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dPD_0FVl1zc?si=HzLOOYZTTdT0xD_1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </section>
 
         <!-- Footer-Links -->
         <footer class="footer-links">
-            <div class="footer-links-container">
+            <div class="container">
                 <div>
                     <h4>Páginas</h4>
                     <ul>
@@ -161,7 +258,8 @@
                 <div>
                     <h4>Nuestro colegio</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias repudiandae eos aperiam recusandae quos natus voluptatum, fugit repellat saepe!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias repudiandae eos
+                        aperiam recusandae quos natus voluptatum, fugit repellat saepe!
                     </p>
                 </div>
             </div>
@@ -172,6 +270,7 @@
             <h6>© Copyright 2020 - Colegio Alfonso Ugarte - Lima, Santa Anita</h6>
         </footer>
     </div>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

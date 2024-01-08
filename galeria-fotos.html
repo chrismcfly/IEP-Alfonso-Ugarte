@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I.E.P Alfonso Ugarte</title>
+    <link rel="shortcut icon" href="./img/icono.png" type="image/x-icon">
+    <title>C.E.P Alfonso Ugarte</title>
     <!-- Lightbox -->
     <link rel="stylesheet" href="./css/lightbox.min.css">
     <!-- Fonts-JosefinSans -->
@@ -12,14 +13,18 @@
     <!-- Box-Icons -->
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/contenido-repetido.css">
     <link rel="stylesheet" href="./css/galeria-fotos.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="menu-btn">
+        <i class='bx bx-menu'></i>
+    </div>
+    <div class="wrapper">
         <!-- Navigation-Top -->
-        <nav class="nav-main-top">
-            <div class="nav-container">
+        <header class="nav-main-top">
+            <div class="container">
                 <a href="#"><img src="./img/brand-au.png" alt="Logo" class="nav-brand"></a>
                 <div class="nav-info">
                     <i class='bx bx-phone'></i>
@@ -44,45 +49,49 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </header>
 
         <!-- Navigation-Main -->
         <nav class="nav-main ">
-            <ul class="nav-menu ">
-                <li>
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./nuestro-colegio.html">Nuestro colegio</a>
-                </li>
-                <li>
-                    <a href="./propuesta-educativa.html">Propuesta educativa</a>
-                </li>
-                <li>
-                    <a href="./ultimas-noticias.html">Últimas noticias</a>
-                </li>
-                <li>
-                    <a href="./galeria-fotos.html">Galeria de fotos</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contáctanos</a>
-                </li>
-            </ul>
-
+            <div class="container">
+                <ul class="nav-menu ">
+                    <li>
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./nuestro-colegio.html">Nuestro colegio</a>
+                    </li>
+                    <li>
+                        <a href="./propuesta-educativa.html">Propuesta educativa</a>
+                    </li>
+                    <li>
+                        <a href="./ultimas-noticias.html">Últimas noticias</a>
+                    </li>
+                    <li>
+                        <a href="./galeria-fotos.html">Galeria de fotos</a>
+                    </li>
+                    <li>
+                        <a href="./contacto.html">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <!-- Separation -->
-        <div>
-            <div class="separation-banner">
+        <div class="separation-banner">
+            <div class="container">
                 <h2>Galería de fotos</h2>
             </div>
-            <div class="separation-bar">
+        </div>
+
+        <div class="separation-bar">
+            <div class="container">
                 <a href="./index.html">Home</a><span>&nbsp;> Galeria de fotos</span>
             </div>
         </div>
 
-        <section class="gallery-container">
-            <div class="gallery-content">
+        <section class="gallery">
+            <div class="container">
                 <div class="gallery-card">
                     <a href="./assets/images/fondo1.jpg" data-lightbox="roadtrip"><img src="./assets/images/fondo1.jpg" alt=""></a>
                 </div>
@@ -135,7 +144,7 @@
 
         <!-- Footer-Links -->
         <footer class="footer-links">
-            <div class="footer-links-container">
+            <div class="container">
                 <div>
                     <h4>Páginas</h4>
                     <ul>

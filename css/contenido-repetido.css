@@ -148,6 +148,40 @@ body {
     color: #808080
 }
 
+.banner-one {
+    height: auto;
+    background: #db3938;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner-one .container{
+    padding: 20px 0px;
+  }
+  
+  .banner-one-brand {
+    width: 100px;
+    padding: 10px;
+    border-radius: 100px;
+    background: white;
+  }
+  
+  .banner-one-text {
+    flex: 1;
+    margin-left: 30px;
+    color: white;
+  }
+  
+  .banner-one-text h4 {
+    font-size: 28px;
+  }
+  
+  .banner-one-text p {
+    font-size: 18px;
+    width: 70%;
+  }
+
 .footer-links {
     height: auto;
     padding: 30px 0px;
@@ -160,9 +194,9 @@ body {
 
 .footer-links .container {
     display: grid;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    gap: 210px;
+    gap: 100px;
 }
 
 .footer-links h4,
@@ -232,8 +266,7 @@ body {
     }
 
     .footer-links .container {
-        grid-template-columns: repeat(3, 200px);
-        gap: 100px;
+        gap: 60px;
     }
 }
 
@@ -285,8 +318,23 @@ body {
         font-size: 18px;
     }
 
+    .banner-one-text h4 {
+        font-size: 22px;
+      }
+      
+      .banner-one-text p {
+        width: 90%;
+      }    
+
     .footer-links .container {
         grid-template-columns: repeat(1, 250px);
         gap: 20px;
     }
+}
+
+@media screen and (max-width: 589px) {
+    .banner-one .container{
+        flex-direction: column;
+        text-align: center;
+      }
 }
